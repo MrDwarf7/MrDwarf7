@@ -1,0 +1,206 @@
+{
+  "general": {
+    "name": "Blake B.",
+    "mixed_name": "Blake B. // MrDwarf7"
+  },
+  "github": {
+    "icon": "",
+    "name": "MrDwarf7",
+    "url": "https://github.com/mrdwarf7",
+    "personal_repo": "https://github.com/mrdwarf7/mrdwarf7"
+  },
+  "intro": {
+    "enabled": true,
+    "icon": "",
+    "header": "Hi, I'm MrDwarf -aka Blake- welcome to my profile!",
+    "img_or_gif": ""
+  },
+  "about": {
+    "enabled": true,
+    "icon": "",
+    "header": "About me!",
+    "bullets": [
+      "🔭 I’m currently working on all manner of Rust related things",
+      "🌱 I’m currently dabbling in languages such as OCaml & friends",
+      "👯 I’m looking to collaborate on Rust code, or other low-level langs",
+      "🤔 I’m looking for help with some good B2B SaaS ideas (Who isn't??)",
+      "💬 Ask me about why TPope and Folke are legends among men.",
+      "⚡  Meme Take: Lua is actually harder than C because it doesn't have pointers"
+    ]
+  },
+  "languages": {
+    "enabled": true,
+    "icon": "",
+    "header": "Languages & Tools",
+    "base_url": "https://img.shields.io/badge",
+    "list": [
+      {
+        "name": "C",
+        "style": "flat"
+      },
+      {
+        "name": "Zig",
+        "style": "flat"
+      },
+      {
+        "name": "Cpp",
+        "style": "flat"
+      },
+      {
+        "name": "Rust",
+        "style": "flat"
+      },
+      {
+        "name": "SQL",
+        "style": "flat"
+      },
+      {
+        "name": "Python",
+        "style": "flat"
+      },
+      {
+        "name": "Lua",
+        "style": "flat"
+      },
+      {
+        "name": "Bat",
+        "style": "flat"
+      },
+      {
+        "name": "Bash",
+        "style": "flat"
+      },
+      {
+        "name": "PowerShell",
+        "style": "flat"
+      },
+      {
+        "name": "Go",
+        "style": "flat"
+      },
+      {
+        "name": "JavaScript",
+        "style": "flat"
+      },
+      {
+        "name": "Typescript",
+        "style": "flat"
+      }
+    ]
+  },
+  "technologies": {
+    "enabled": true,
+    "icon": "",
+    "header": "Technologies",
+    "base_url": "https://img.shields.io/badge",
+    "list": [
+      {
+        "name": "Linux",
+        "style": "flat-square"
+      },
+      {
+        "name": "NixOS",
+        "style": "flat"
+      },
+      {
+        "name": "GitHub",
+        "style": "flat-square"
+      },
+      {
+        "name": "Git",
+        "style": "flat-square"
+      },
+      {
+        "name": "Docker",
+        "style": "flat-square"
+      },
+      {
+        "name": "React",
+        "style": "flat-square"
+      },
+      {
+        "name": "AzureCloud",
+        "style": "flat-square"
+      },
+      {
+        "name": "Amazon Web Services",
+        "style": "flat-square"
+      },
+      {
+        "name": "PowerBI",
+        "style": "flat-square"
+      },
+      {
+        "name": "Pandas",
+        "style": "flat-square"
+      },
+      {
+        "name": "Polars",
+        "style": "flat-square"
+      },
+      {
+        "name": "Windows 7",
+        "style": "flat-square"
+      },
+      {
+        "name": "Windows 8",
+        "style": "flat-square"
+      },
+      {
+        "name": "Windows 10",
+        "style": "flat-square"
+      },
+      {
+        "name": "Windows 11",
+        "style": "flat-square"
+      }
+    ]
+  },
+  "gh_stats": {
+    "enabled": true,
+    "icon": "",
+    "header": "My GitHub stats:",
+    "urls": [
+      "https://github-readme-stats.vercel.app/api?username=mrdwarf7&show_icons=true&theme=dark#gh-dark-mode-only",
+      "https://github-readme-stats.vercel.app/api/top-langs/?username=mrdwarf7&theme=dark&layout=compact&hide=powershell,lua#gh-dark-mode-only"
+    ]
+  },
+  "contact": {
+    "enabled": false,
+    "icon": "",
+    "header": "Get in touch with me",
+    "methods": [
+      {
+        "email": null,
+        "icon": "",
+        "url": "",
+        "display_text": "Email: "
+      },
+      {
+        "linkedin": null,
+        "icon": "",
+        "url": "https://linkedin.com",
+        "display_text": "LinkedIn: "
+      }
+    ]
+  },
+  "sponsorship": {
+    "enabled": false,
+    "icon": "",
+    "header": "Sponsor me, if you'd like",
+    "methods": [
+      {
+        "kofi": null,
+        "icon": "",
+        "url": "",
+        "display_text": ""
+      },
+      {
+        "other": null,
+        "icon": "",
+        "url": "",
+        "display_text": ""
+      }
+    ]
+  }
+}

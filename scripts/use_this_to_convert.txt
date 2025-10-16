@@ -1,0 +1,1 @@
+./convert.sh && cat ./README.md| tr -d '`' | tee >README.md
