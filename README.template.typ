@@ -10,8 +10,8 @@
         .at(section)
         .keys()
         .filter(
-          inner => //
-          if inner == "enabled" and conf.at(section).at(inner) == true {
+          it => //
+          if it == "enabled" and conf.at(section).at(it) == true {
             true
           } else {
             false
