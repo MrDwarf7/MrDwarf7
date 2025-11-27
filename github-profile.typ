@@ -52,6 +52,16 @@
   raw(as_link)
 }
 
+// #let render_html_raw(link: "", url: "", alt: "") = {
+//   let alt = if alt != "" { alt } else { "Discord Presence" }
+//   let fmt_lanyard = if link != "" {
+//     "<a href='" + link + "'><img src='" + url + "' alt='" + alt + "' /></a>"
+//   } else {
+//     ""
+//   }
+//   raw(fmt_lanyard)
+// }
+
 #let github_profile(
   general: (
     name: "",
@@ -63,12 +73,17 @@
     url: "",
     personal_repo: "",
   ),
-  lanyard: "",
+  lanyard: (
+    name: "",
+    url: "",
+    link: "",
+  ),
   // enabled_sections: (),
   sect_intro,
   sect_about,
   sect_languages,
   sect_technologies,
+  // sect_lanyard,
   sect_gh_stats,
   sect_contact,
   sect_sponsorship,
@@ -90,6 +105,7 @@
     [ #sect_languages ],
     [ #sect_technologies ],
     [ #sect_gh_stats ],
+    // [ #sect_lanyard ],
     // [ #sect_contact ],
     // [ #sect_sponsorship ],
   )
@@ -116,11 +132,9 @@
   linebreak()
   linebreak()
 
-  // [![Discord Presence](https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark)](https://discord.com/users/139557684683866112)
-  // <a href="https://discord.com/users/139557684683866112"><img src="https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark" /></a>
 
   let fmt_lanyard = if lanyard != "" {
-    "<a href='" + lanyard.link + "'><img src='" + lanyard.url + "' alt='Discord Presence' /></a>"
+    "<a href='" + lanyard.link + "'><img src='" + lanyard.url + "' alt='" + lanyard.name + "' /></a>"
   } else {
     ""
   }
