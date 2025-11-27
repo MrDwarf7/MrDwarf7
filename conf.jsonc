@@ -168,7 +168,7 @@
   "lanyard": {
     "enabled": true,
     "name": "Lanyard Discord",
-    "url": "https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark"
+    "url": "[![Discord Presence](https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark)](https://discord.com/users/139557684683866112)"
   },
   "contact": {
     "enabled": false,

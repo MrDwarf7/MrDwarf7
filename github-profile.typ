@@ -115,5 +115,5 @@
   link(github.url, github.name) + " | " + link(github.url + "/" + github.personal_repo, github.personal_repo)
   linebreak()
   linebreak()
-  link(lanyard.url, lanyard.name)
+  lanyard
 }
