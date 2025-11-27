@@ -59,5 +59,7 @@ My GitHub stats:
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [MrDwarf7](https://github.com/mrdwarf7) \|
-[https://github.com/mrdwarf7/mrdwarf7](https://github.com/mrdwarf7/https://github.com/mrdwarf7/mrdwarf7)[Lanyard
+[https://github.com/mrdwarf7/mrdwarf7](https://github.com/mrdwarf7/https://github.com/mrdwarf7/mrdwarf7)\
+\
+[Lanyard
 Discord](https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark)
