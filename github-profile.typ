@@ -115,5 +115,15 @@
   link(github.url, github.name) + " | " + link(github.url + "/" + github.personal_repo, github.personal_repo)
   linebreak()
   linebreak()
-  eval(str(lanyard), mode: markup)
+
+  // [![Discord Presence](https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark)](https://discord.com/users/139557684683866112)
+  // <a href="https://discord.com/users/139557684683866112"><img src="https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark" /></a>
+
+  let fmt_lanyard = if lanyard != "" {
+    "<a href='" + lanyard.link + "'><img src='" + lanyard.url + "' alt='Discord Presence' /></a>"
+  } else {
+    ""
+  }
+  let raw_link = raw(fmt_lanyard)
+  [#raw_link]
 }
