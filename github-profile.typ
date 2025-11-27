@@ -63,6 +63,7 @@
     url: "",
     personal_repo: "",
   ),
+  lanyard: "",
   // enabled_sections: (),
   sect_intro,
   sect_about,
@@ -112,32 +113,5 @@
 
   v(0pt)
   link(github.url, github.name) + " | " + link(github.url + "/" + github.personal_repo, github.personal_repo)
+  link(lanyard.url, lanyard.name)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

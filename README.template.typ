@@ -27,6 +27,7 @@
 #github_profile(
   general: conf.general,
   github: conf.github,
+  lanyard: conf.lanyard,
   // enabled_sections: { init_es.map(e => if e == () { false } else { true }) },
   [
 
