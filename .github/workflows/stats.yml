@@ -51,6 +51,13 @@ jobs:
       - name: "Setup Typst"
         uses: typst-community/setup-typst@v4.3.1
         #
+      # check for pandoc
+      - if: ${{ !hashFiles('**/pandoc') }}
+        name: "Install pandoc"
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+        #
       - name: "Generate Typst md file"
         run: |
           cd ${{ github.workspace }}
