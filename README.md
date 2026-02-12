@@ -54,9 +54,12 @@ Technologies
 
 My GitHub stats:
 
-  ------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
-  [![GitHub Stat](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/stats.svg)]{.box}   [![GitHub Stat](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/top-langs.svg)]{.box}
-  ------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
++----------------------------------+----------------------------------+
+| ![GitHub                         | ![GitHub                         |
+| Stat](https://raw.githubus       | Stat](https://raw.githubuserco   |
+| ercontent.com/MrDwarf7/MrDwarf7/ | ntent.com/MrDwarf7/MrDwarf7/refs |
+| refs/heads/main/cards/stats.svg) | /heads/main/cards/top-langs.svg) |
++----------------------------------+----------------------------------+
 
 [MrDwarf7](https://github.com/mrdwarf7) \|
 [https://github.com/mrdwarf7/mrdwarf7](https://github.com/mrdwarf7/https://github.com/mrdwarf7/mrdwarf7)\
