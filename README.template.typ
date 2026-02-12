@@ -108,9 +108,12 @@
     #let stats = conf.gh_stats.urls.first()
     #let langs = conf.gh_stats.urls.last()
 
+    #let stats = conf.gh_stats.stats_path
+    #let langs = conf.gh_stats.langs_path
+
     #grid(
       columns: 2,
-      [ #render_gh_stat(stat_url: stats) ], [ #render_gh_stat(stat_url: langs) ],
+      [ #render_gh_stat(stats) ], [ #render_gh_stat(langs) ],
     )
 
   ],

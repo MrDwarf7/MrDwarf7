@@ -160,6 +160,8 @@
     "enabled": true,
     "icon": "",
     "header": "My GitHub stats:",
+    "stats_path": "cards/stats.svg",
+    "langs_path": "cards/top-langs.svg",
     "urls": [
       "https://github-readme-stats.vercel.app/api?username=mrdwarf7&show_icons=true&theme=dark#gh-dark-mode-only",
       "https://github-readme-stats.vercel.app/api/top-langs/?username=mrdwarf7&theme=dark&layout=compact&hide=powershell,lua#gh-dark-mode-only"

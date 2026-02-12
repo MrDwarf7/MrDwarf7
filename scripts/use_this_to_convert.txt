@@ -1,1 +1,1 @@
-./convert.sh && cat ./README.md| tr -d '`' | tee >README.md
+./convert.sh && cat ./README.md | tr -d '`' | tee >README.md
