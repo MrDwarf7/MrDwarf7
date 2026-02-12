@@ -41,16 +41,11 @@
 
 // #let render_gh_stat(stat_url: "") = {
 #let render_gh_stat(stat_url) = {
-  // if filepath != "" [
-  //   #box(
-  //     image(filepath, alt: "GITHUB STAT"),
-  //   )
-  // ]
-
-  box(
-    image(stat_url, alt: "GitHub Stat"),
-  )
-
+  if stat_url == "" [
+    "GitHub Stats not available"
+  ] else [
+    #image(stat_url, alt: "GitHub Stat")
+  ]
 
   // let as_link = "<a href='" + stat_url + "'><img src='" + stat_url + "' alt='GitHub Stat' /></a>"
   // raw(as_link)
