@@ -42,10 +42,9 @@
 // #let render_gh_stat(stat_url: "") = {
 #let render_gh_stat(stat_url) = {
   set align(center)
-  let img = image(stat_url, format: "svg")
-  [ #img ]
+  [ #image(stat_url, format: "svg") ]
 
-
+  // -- when rendering as a literal link
   // let as_link = "<a href='" + stat_url + "'><img src='" + stat_url + "' alt='GitHub Stat' /></a>"
   // raw(as_link)
 }
