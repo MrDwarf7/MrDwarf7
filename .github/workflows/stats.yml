@@ -48,8 +48,8 @@ jobs:
           git commit -m "Update README cards" || exit 0
           git push
         #
-      - name: "Add Typst"
-        run: sudo apt install -y typst
+      - name: "Setup Typst"
+        uses: typst-community/setup-typst@v4.3.1
         #
       - name: "Generate Typst md file"
         run: |
