@@ -1,4 +1,4 @@
-#import "github-profile.typ": github_profile, icon_header, render_gh_stat, render_item, render_method, render_skyline
+#import "github-profile.typ": github_profile, icon_header, render_gh_stat, render_item, render_skyline
 #let conf = json("conf.jsonc")
 // conf.at(section).at(inner) == true { true } else { false },
 
@@ -100,7 +100,6 @@
 
   ],
 
-
   [
 
     === #icon_header(conf.gh_stats.icon, conf.gh_stats.header, "GitHub Stats: ")
@@ -129,7 +128,7 @@
 
     === #icon_header(conf.contact.icon, conf.contact.header, "Get in touch with me")
     #for method in conf.contact.methods [
-      • #render_method(icon: method.icon, display_text: method.display_text, url: method.url)\
+      • #render_skyline(icon: method.icon, display_text: method.display_text, url: method.url)\
     ]
   ],
 
@@ -139,7 +138,7 @@
     #let method_array = ()
     #let length = conf.sponsorship.methods.len()
     #for (idx, method) in conf.sponsorship.methods.enumerate() [
-      #let line = "• " + render_method(icon: method.icon, display_text: method.display_text, url: method.url)
+      #let line = "• " + render_skyline(icon: method.icon, display_text: method.display_text, url: method.url)
       #if idx < length - 1 [
         #method_array.push(line + " ")
       ] else [

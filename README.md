@@ -61,7 +61,6 @@ My GitHub stats:
 ------------------------------------------------------------------------
 
 My GitHub skyline
-
 ![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/main/assets/MrDwarf7-2023-26-github-skyline.stl)
 
 [MrDwarf7](https://github.com/mrdwarf7) \|

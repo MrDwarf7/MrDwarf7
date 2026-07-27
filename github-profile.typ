@@ -29,6 +29,15 @@
   str(url_component.replace(" ", "%20"))
 }
 
+// Emit a string as raw HTML that survives the typst -> pandoc -> markdown pipeline.
+// pandoc's typst reader discards the `lang` attribute on raw(), so we tag the
+// payload with a sentinel prefix that scripts/gh-html.lua strips and rewrites to
+// RawInline(html). This avoids pandoc backtick-wrapping our HTML (which GitHub
+// would then show as literal text).
+#let gh_html(s, block: false) = {
+  raw("@@GH_HTML@@" + s, block: block)
+}
+
 #let render_item(base_url: "", name: "", style: "") = {
   let get_icon = get_icon.with(url: base_url)
   let icon_url = get_icon(name: name, style: style)
@@ -36,36 +45,17 @@
 
   // icon URL
   let as_link = "<a href='" + icon_url + "'><img src='" + icon_url + "' alt='" + name + "' /></a>"
-  raw(as_link)
+  gh_html(as_link)
 }
 
 // #let render_gh_stat(stat_url: "") = {
 #let render_gh_stat(stat_url) = {
-  set align(center)
-  [ #image(stat_url, format: "svg") ]
-
-  // -- when rendering as a literal link
-  // let as_link = "<a href='" + stat_url + "'><img src='" + stat_url + "' alt='GitHub Stat' /></a>"
-  // raw(as_link)
+  // Emit inline HTML <img> via gh_html() so pandoc's typst reader passes it
+  // through as raw HTML (like the shields.io badges). Using typst image() makes
+  // pandoc rewrite the remote URL to a broken local path.
+  let as_img = "<img src=\"" + stat_url + "\" alt=\"GitHub Stat\" />"
+  gh_html(as_img)
 }
-
-#let render_method(icon: "", display_text: "", url: "") = {
-  let icon = if icon != "" { get_icon(name: icon) + " " } else { "" }
-  let display_text = if display_text != "" { display_text } else { url }
-  let url = if url != "" { url } else { "#" }
-  let as_link = "<a href='" + url + "'>" + icon + display_text + "</a>"
-  raw(as_link)
-}
-
-// #let render_html_raw(link: "", url: "", alt: "") = {
-//   let alt = if alt != "" { alt } else { "Discord Presence" }
-//   let fmt_lanyard = if link != "" {
-//     "<a href='" + link + "'><img src='" + url + "' alt='" + alt + "' /></a>"
-//   } else {
-//     ""
-//   }
-//   raw(fmt_lanyard)
-// }
 
 #let github_profile(
   general: (
@@ -119,7 +109,6 @@
 
   let section_length = sections.len()
 
-
   for (idx, section) in sections.enumerate() [
     // #if enabled_sections.at(idx) != true [
     //   #continue
@@ -135,25 +124,22 @@
   ]
 
   v(0pt)
-  link(github.url, github.name) + " | " + link(github.url + "/" + github.personal_repo, github.personal_repo)
+  link(github.url, github.name) + " | " + link(github.url + "/" + github.name)
   linebreak()
   linebreak()
-
 
   let fmt_lanyard = if lanyard != "" {
     "<a href='" + lanyard.link + "'><img src='" + lanyard.url + "' alt='" + lanyard.name + "' /></a>"
   } else {
     ""
   }
-  let raw_link = raw(fmt_lanyard)
+  let raw_link = gh_html(fmt_lanyard)
   [#raw_link]
 }
 
-// Render the skyline the same way as the stat cards: typst image(), which pandoc
-// turns into a boxed ![](url) markdown block. Note: GitHub renders .stl natively
-// only on the file's own page (click opens the 3D viewer), not inline in the README
-// DOM, but embedding via image() matches the existing card style.
 #let render_skyline(stl_url: "") = {
-  set align(center)
-  [ #image(stl_url, format: "stl") ]
+  // GitHub can't render .stl inline in markdown (an <img> would be broken), and
+  // strips <script> embeds. So we link to the committed .stl — clicking opens
+  // GitHub's native 3D viewer on the file page.
+  gh_html("<a href=\"" + stl_url + "\">View my GitHub skyline (3D)</a>")
 }

@@ -27,7 +27,7 @@ jobs:
       - name: Generate skyline STL
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh skyline --full
+        run: gh skyline --full -u ${{ github.repository_owner }} -o assets
 
       - name: Commit STL
         run: |
