@@ -1,0 +1,38 @@
+name: Update Skyline
+
+on:
+  schedule:
+    # Run weekly so the skyline stays roughly current without hammering the API
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: profile-output-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install gh-skyline
+        run: gh extension install github/gh-skyline
+
+      - name: Generate skyline STL
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh skyline --full
+
+      - name: Commit STL
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "assets/${GITHUB_REPOSITORY_OWNER}-"*-github-skyline.stl
+          git commit -m "skyline: weekly update" || exit 0
+          git push

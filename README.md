@@ -58,6 +58,12 @@ My GitHub stats:
   ![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/stats.svg)   ![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/top-langs.svg)
   ------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------
+
+My GitHub skyline
+
+![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/main/assets/MrDwarf7-2023-26-github-skyline.stl)
+
 [MrDwarf7](https://github.com/mrdwarf7) \|
 [https://github.com/mrdwarf7/mrdwarf7](https://github.com/mrdwarf7/https://github.com/mrdwarf7/mrdwarf7)\
 \

@@ -90,6 +90,7 @@
   sect_technologies,
   // sect_lanyard,
   sect_gh_stats,
+  sect_skyline,
   sect_contact,
   sect_sponsorship,
 ) = {
@@ -110,6 +111,7 @@
     [ #sect_languages ],
     [ #sect_technologies ],
     [ #sect_gh_stats ],
+    [ #sect_skyline ],
     // [ #sect_lanyard ],
     // [ #sect_contact ],
     // [ #sect_sponsorship ],
@@ -145,4 +147,13 @@
   }
   let raw_link = raw(fmt_lanyard)
   [#raw_link]
+}
+
+// Render the skyline the same way as the stat cards: typst image(), which pandoc
+// turns into a boxed ![](url) markdown block. Note: GitHub renders .stl natively
+// only on the file's own page (click opens the 3D viewer), not inline in the README
+// DOM, but embedding via image() matches the existing card style.
+#let render_skyline(stl_url: "") = {
+  set align(center)
+  [ #image(stl_url, format: "stl") ]
 }

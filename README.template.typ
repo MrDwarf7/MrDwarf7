@@ -1,4 +1,4 @@
-#import "github-profile.typ": github_profile, icon_header, render_gh_stat, render_item, render_method
+#import "github-profile.typ": github_profile, icon_header, render_gh_stat, render_item, render_method, render_skyline
 #let conf = json("conf.jsonc")
 // conf.at(section).at(inner) == true { true } else { false },
 
@@ -115,6 +115,14 @@
       columns: 2,
       [ #render_gh_stat(stats) ], [ #render_gh_stat(langs) ],
     )
+
+  ],
+  [
+
+    #if conf.skyline.enabled [
+      === #icon_header(conf.skyline.icon, conf.skyline.header, "My GitHub skyline")
+      #render_skyline(stl_url: conf.skyline.stl_url)
+    ]
 
   ],
   [
