@@ -1,15 +1,15 @@
-Hi, I\'m MrDwarf -aka Blake- welcome to my profile!
+Hi, I'm MrDwarf -aka Blake- welcome to my profile!
 
 ------------------------------------------------------------------------
 
 About me!
 
-• 🔭 I'm currently working on all manner of Rust related things\
-• 🌱 I'm currently dabbling in languages such as OCaml & friends\
-• 👯 I'm looking to collaborate on Rust code, or other low-level langs\
-• 🤔 I'm looking for help with some good B2B SaaS ideas (Who isn\'t??)\
-• 💬 Ask me about why TPope and Folke are legends among men.\
-• ⚡ Meme Take: Lua is actually harder than C because it doesn\'t have
+• 🔭 I’m currently working on all manner of Rust related things  
+• 🌱 I’m currently dabbling in languages such as OCaml & friends  
+• 👯 I’m looking to collaborate on Rust code, or other low-level langs  
+• 🤔 I’m looking for help with some good B2B SaaS ideas (Who isn't??)  
+• 💬 Ask me about why TPope and Folke are legends among men.  
+• ⚡ Meme Take: Lua is actually harder than C because it doesn't have
 pointers
 
 ------------------------------------------------------------------------
@@ -54,16 +54,16 @@ Technologies
 
 My GitHub stats:
 
-  ------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------
-  ![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/stats.svg)   ![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/top-langs.svg)
-  ------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------
+|                                                                                                                     |                                                                                                                         |
+|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/stats.svg" alt="GitHub Stat" /> | <img src="https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/top-langs.svg" alt="GitHub Stat" /> |
 
 ------------------------------------------------------------------------
 
 My GitHub skyline
-![](https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/main/assets/MrDwarf7-2023-26-github-skyline.stl)
+<a href="https://github.com/MrDwarf7/MrDwarf7/blob/main/assets/MrDwarf7-2023-26-github-skyline.stl">View my GitHub skyline (3D)</a>
 
 [MrDwarf7](https://github.com/mrdwarf7) \|
-[https://github.com/mrdwarf7/mrdwarf7](https://github.com/mrdwarf7/https://github.com/mrdwarf7/mrdwarf7)\
-\
+<https://github.com/mrdwarf7/MrDwarf7>  
+  
 <a href='https://discord.com/users/139557684683866112'><img src='https://lanyard.cnrad.dev/api/139557684683866112?hideStatus=true&hideSpotify=true&hideTimestamp=true&hideActivity=true&theme=dark' alt='Lanyard Discord' /></a>
