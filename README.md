@@ -54,8 +54,8 @@ Technologies
 
 My GitHub stats:
 
-|                                                                                                                     |                                                                                                                         |
-|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+|  |  |
+|----|----|
 | <img src="https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/stats.svg" alt="GitHub Stat" /> | <img src="https://raw.githubusercontent.com/MrDwarf7/MrDwarf7/refs/heads/main/cards/top-langs.svg" alt="GitHub Stat" /> |
 
 ------------------------------------------------------------------------
